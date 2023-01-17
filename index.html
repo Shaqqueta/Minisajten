@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="bilder/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Xbox Elite Series 2</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="lilla_container">
+        <header class="navbar">
+          <a href="#lilla_container">
+            <img src="bilder/logga.png" alt="" class="logo" />
+          </a>
+          <nav>
+            <ul id="menuList">
+              <li class="loggain">
+                <a href="loggain.html">Logga In</a>
+              </li>
+
+              <li>
+                <a href="#footer">Kontakta Oss</a>
+              </li>
+              <li><a href="kundvagn.html" target="_blank">Kundvagn</a></li>
+            </ul>
+          </nav>
+          <img
+            src="bilder/menu-icon-8.png"
+            alt=""
+            class="menu-icon"
+            onclick="togglemenu()"
+          />
+        </header>
+        <div class="row">
+          <div class="col-1">
+            <h2>Xbox Elite<br />Series 2</h2>
+            <h3>Trådlös Kontroller För PC</h3>
+            <p>(Anpassningsbar)</p>
+            <h4>$190.50</h4>
+            <a href="kundvagn.html">
+              <button type="button" class="köp_nu">Köp Nu</button>
+            </a>
+          </div>
+          <div class="col-2">
+            <img src="bilder/controller.png" alt="" class="controller" />
+            <div class="color-box"></div>
+            <div class="add-btn">
+              <a href="#video">
+                <img src="bilder/add.png" alt="" class="utforskaBild" />
+                <p><small class="utforska">Utforska</small></p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="videoDiv">
+        <video src="video.mp4" id="video" autoplay muted loop></video>
+        <h1 class="ingår">Vad Ingår?</h1>
+        <p class="specs_text">
+          - Xbox Elite Wireless Controller Series 2 <br />
+          - Thumbstick – adjustment tool <br />
+          - Charging dock + USB-C cable <br />
+          - Set of 4 paddles: medium (2), mini (2) <br />
+          - Additional thumbsticks: classic (2), dome (1), tall (1) <br />
+          - Additional D-pad: standard <br />
+          - Carrying case
+        </p>
+      </div>
+
+      <footer id="footer">
+        <section>
+          <div class="contact-container">
+            <div class="form-container">
+              <h3>Kontakta Oss</h3>
+              <form action="" class="contact-form">
+                <input type="text" placeholder="För & efternamn" required>
+                <input type="email" name="" id="" placeholder="Email" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Skriv ditt meddelande här" required></textarea>
+                <a href="index.html">
+                <input type="submit" value="SKICKA" class="send-button">
+              </a>
+              </form>
+            </div>
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17467977.816971716!2d12.412640651647994!3d57.69400733606668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9ee05360b139%3A0xee3bde2de6e522f0!2sMicrosoft!5e0!3m2!1ssv!2sse!4v1673895246692!5m2!1ssv!2sse" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </section>
+      </footer>
+      <div class="social">
+        <a href="https://www.facebook.com/xbox/" target="_blank">
+          <img src="bilder/fb.png" alt="" />
+        </a>
+        <a href="https://twitter.com/Xbox" target="_blank">
+          <img src="bilder/tw.png" alt="" />
+        </a>
+        <a href="https://www.instagram.com/xbox/" target="_blank">
+          <img src="bilder/ig.png" alt="" />
+        </a>
+      </div>
+
+    <!-- Javascript för att få menu-kappen att fungera när man har en liten skärm (taget från internet) -->
+
+    <script>
+      var menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+      function togglemenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "130px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <!-- Javascript för att få menu-kappen att fungera när man har en liten skärm (taget från internet) -->
+  </body>
+</html>
