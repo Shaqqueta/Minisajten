@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="bilder/favicon-32x32.png" />
+    <script src="https://kit.fontawesome.com/ce6afd4b76.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Xbox Elite Series 2</title>
   </head>
@@ -22,7 +23,7 @@
               </li>
 
               <li>
-                <a href="#footer">Kontakta Oss</a>
+                <a href="#socialt">Kontakta Oss</a>
               </li>
               <li><a href="kundvagn.html" target="_blank">Kundvagn</a></li>
             </ul>
@@ -45,7 +46,7 @@
             </a>
           </div>
           <div class="col-2">
-            <img src="bilder/controller.png" alt="" class="controller" />
+            <img src="bilder/controller.png" alt="" class="controller" id="kontroll"/>
             <div class="color-box"></div>
             <div class="add-btn">
               <a href="#video">
@@ -69,9 +70,9 @@
           - Carrying case
         </p>
       </div>
-
-      <footer id="footer">
-        <section>
+      <footer>
+      <div id="footer">
+        <div>
           <div class="contact-container">
             <div class="form-container">
               <h3>Kontakta Oss</h3>
@@ -79,28 +80,29 @@
                 <input type="text" placeholder="För & efternamn" required>
                 <input type="email" name="" id="" placeholder="Email" required>
                 <textarea name="" id="" cols="30" rows="10" placeholder="Skriv ditt meddelande här" required></textarea>
-                <a href="index.html">
                 <input type="submit" value="SKICKA" class="send-button">
-              </a>
               </form>
             </div>
             <div class="map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17467977.816971716!2d12.412640651647994!3d57.69400733606668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9ee05360b139%3A0xee3bde2de6e522f0!2sMicrosoft!5e0!3m2!1ssv!2sse!4v1673895246692!5m2!1ssv!2sse" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
-        </section>
-      </footer>
-      <div class="social">
+        </div>
+      </div>
+
+      <div class="social" id="socialt">
         <a href="https://www.facebook.com/xbox/" target="_blank">
-          <img src="bilder/fb.png" alt="" />
+          <i class="fa-brands fa-instagram"></i>
         </a>
-        <a href="https://twitter.com/Xbox" target="_blank">
-          <img src="bilder/tw.png" alt="" />
+        <a href="https://twitter.com/Xbox" target="_blank" >
+          <i class="fa-brands fa-twitter"></i>
         </a>
         <a href="https://www.instagram.com/xbox/" target="_blank">
-          <img src="bilder/ig.png" alt="" />
+          <i class="fa-brands fa-facebook"></i>
         </a>
       </div>
+    </footer>
+    
 
     <!-- Javascript för att få menu-kappen att fungera när man har en liten skärm (taget från internet) -->
 
