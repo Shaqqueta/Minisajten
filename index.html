@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="bilder/favicon-32x32.png" />
+    <link rel="icon" href="bilder/favicon-32x32.png" />
     <script src="https://kit.fontawesome.com/ce6afd4b76.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Xbox Elite Series 2</title>
   </head>
   <body>
     <div class="container">
-      <div id="lilla_container">
+      <div id="lillaContainer">
+        
         <header class="navbar">
-          <a href="#lilla_container">
-            <img src="bilder/logga.png" alt="" class="logo" />
+          <a href="#lillaContainer">
+            <img src="bilder/logga.png" alt="" class="logga" />
           </a>
           <nav>
             <ul id="menuList">
@@ -35,20 +36,21 @@
             onclick="togglemenu()"
           />
         </header>
-        <div class="row">
-          <div class="col-1">
+
+        <div class="rad">
+          <div class="kolumn1">
             <h2>Xbox Elite<br />Series 2</h2>
             <h3>Trådlös Kontroller För PC</h3>
             <p>(Anpassningsbar)</p>
             <h4>$190.50</h4>
             <a href="kundvagn.html">
-              <button type="button" class="köp_nu">Köp Nu</button>
+              <button type="button" class="köpNu">Köp Nu</button>
             </a>
           </div>
-          <div class="col-2">
-            <img src="bilder/controller.png" alt="" class="controller" id="kontroll"/>
-            <div class="color-box"></div>
-            <div class="add-btn">
+          <div class="kolumn2">
+            <img src="bilder/controller.png" alt="" class="kontroll"/>
+            <div class="box"></div>
+            <div class="knapp">
               <a href="#video">
                 <img src="bilder/add.png" alt="" class="utforskaBild" />
                 <p><small class="utforska">Utforska</small></p>
@@ -60,7 +62,7 @@
       <div class="videoDiv">
         <video src="video.mp4" id="video" autoplay muted loop></video>
         <h1 class="ingår">Vad Ingår?</h1>
-        <p class="specs_text">
+        <p class="specsText">
           - Xbox Elite Wireless Controller Series 2 <br />
           - Thumbstick – adjustment tool <br />
           - Charging dock + USB-C cable <br />
@@ -70,26 +72,25 @@
           - Carrying case
         </p>
       </div>
+
       <footer>
       <div id="footer">
         <div>
-          <div class="contact-container">
-            <div class="form-container">
+          <div class="kontaktContainer">
+            <div class="formContainer">
               <h3>Kontakta Oss</h3>
-              <form action="" class="contact-form">
+              <form action="" class="kontaktForm">
                 <input type="text" placeholder="För & efternamn" required>
-                <input type="email" name="" id="" placeholder="Email" required>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Skriv ditt meddelande här" required></textarea>
-                <input type="submit" value="SKICKA" class="send-button">
+                <input type="email" id="" placeholder="Email" required>
+                <textarea id="" cols="30" rows="10" placeholder="Skriv ditt meddelande här" required></textarea>
+                <input type="submit" value="SKICKA" class="skicka">
               </form>
             </div>
-            <div class="map">
+            <div class="karta">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17467977.816971716!2d12.412640651647994!3d57.69400733606668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9ee05360b139%3A0xee3bde2de6e522f0!2sMicrosoft!5e0!3m2!1ssv!2sse!4v1673895246692!5m2!1ssv!2sse" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
-        </div>
       </div>
-
       <div class="social" id="socialt">
         <a href="https://www.facebook.com/xbox/" target="_blank">
           <i class="fa-brands fa-instagram"></i>
@@ -101,9 +102,9 @@
           <i class="fa-brands fa-facebook"></i>
         </a>
       </div>
+    </div>
     </footer>
     
-
     <!-- Javascript för att få menu-kappen att fungera när man har en liten skärm (taget från internet) -->
 
     <script>
