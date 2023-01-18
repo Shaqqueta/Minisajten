@@ -17,11 +17,7 @@ html {
   overflow: hidden;
 }
 
-.loggain:active {
-  opacity: 0;
-}
-
-#lilla_container {
+#lillaContainer {
   padding-left: 8%;
   padding-right: 8%;
 }
@@ -30,23 +26,32 @@ html {
   width: 100%;
   display: flex;
   align-items: center;
+  
 }
 
-.logo {
-  width: 50px;
+.logga {
+  width: 100px;
   cursor: pointer;
   margin-top: 40%;
+  margin-left: 70%;
+  
 }
-
+.navbar:hover
+{
+  animation-name: animation1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
 .utforska {
   color: #fff;
   text-decoration: none;
 }
 
 .menu-icon {
-  width: 25px;
+  width: 40px;
   cursor: pointer;
   display: none;
+  margin: 10px 8px 0 0;
 }
 
 nav {
@@ -72,45 +77,47 @@ nav ul li a:hover {
   color: #1e453e;
 }
 
-.row {
+.rad {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 100px 0;
 }
 
-.col-1 {
-  flex-basis: 40%;
+.kolumn1 {
   position: relative;
   margin-left: 50px;
   border: 2px solid black;
   box-shadow: 10px 5px 5px grey;
-  padding: 75px;
+  padding: 70px;
+  margin-left: 50px;
+  justify-content: center;
+
 }
 
-.col-1 h2 {
+.kolumn1 h2 {
   font-size: 54px;
 }
 
-.col-1 h3 {
+.kolumn1 h3 {
   font-size: 30px;
   color: #707070;
   font-weight: 100;
   margin: 20px 0 10px;
 }
 
-.col-1 p {
+.kolumn1 p {
   font-size: 16px;
   color: #b7b7b7;
   font-weight: 100;
 }
 
-.col-1 h4 {
+.kolumn1 h4 {
   margin: 30px 0;
   font-size: 20px;
 }
 
-.köp_nu {
+.köpNu {
   width: 140px;
   border: 0;
   padding: 12px 10px;
@@ -121,17 +128,7 @@ nav ul li a:hover {
   cursor: pointer;
   transition: ease 0.5s;
 }
-
-.köp_nu img {
-  width: 30px;
-  display: none;
-}
-
-.köp_nu:hover img {
-  display: block;
-}
-
-.col-2 {
+.kolumn2 {
   position: relative;
   flex-basis: 60%;
   display: flex;
@@ -139,11 +136,11 @@ nav ul li a:hover {
   margin-left: 100px;
 }
 
-.col-2 .controller {
+.kolumn2 .kontroll {
   width: 90%;
 }
 
-.color-box {
+.box {
   position: absolute;
   right: 0;
   top: 0;
@@ -156,12 +153,12 @@ nav ul li a:hover {
   box-shadow: 10px 5px 5px grey;
 }
 
-.add-btn img {
+.knapp img {
   width: 35px;
   margin-bottom: 5px;
 }
 
-.add-btn {
+.knapp {
   text-align: center;
   color: #fff;
   cursor: pointer;
@@ -199,30 +196,27 @@ h1 {
   margin-left: 10%;
 }
 
-.specs_text {
+.specsText {
   color: white;
-  /* padding: 100px 0 0 220px;
-  width: 500px;
-  line-height: 40px; */
   padding: 3% 0 0 10%;
   line-height: 350%;
 }
 
 #footer {
-  margin-top: 10%;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   color: #fff;
   justify-content: center;
+  margin-top: 18%;
 }
 
 .text {
   height: 30px;
 }
 
-.contact-container {
+.kontaktContainer {
   margin: auto;
   max-width: 960px;
   margin-top: 100px;
@@ -241,24 +235,24 @@ textarea::placeholder {
   color: #fff;
 }
 
-.form-container {
+.formContainer {
   padding: 20px;
 }
 
-.form-container,
+.formContainer,
 h3 {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
-.contact-form {
+.kontaktForm {
   display: grid;
   row-gap: 2rem;
 }
 
-.contact-form input,
-.contact-form textarea {
+.kontaktForm input,
+.kontaktForm textarea {
   width: 100%;
   border: none;
   outline: none;
@@ -269,14 +263,14 @@ h3 {
   border-radius: 0.5rem;
 }
 
-.contact-form,
+.kontaktForm,
 textarea {
   resize: none;
   height: 200px;
 }
 
-.contact-form,
-.send-button {
+.kontaktForm,
+.skicka {
   border: none;
   outline: none;
   font-size: 1rem;
@@ -285,13 +279,47 @@ textarea {
   cursor: pointer;
 }
 
-.map,
+.karta,
 iframe {
   width: 100%;
   height: 100%;
 }
-
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1560px)
+{
+  #footer
+  {
+    margin-top: 13%;
+  }
+}
+@media only screen and (max-width: 1460px)
+{
+  #footer
+  {
+    margin-top: 11%;
+  }
+}
+@media only screen and (max-width: 1360px)
+{
+  #footer
+  {
+    margin-top: 9%;
+  }
+}
+@media only screen and (max-width: 1260px)
+{
+  #footer
+  {
+    margin-top: 7%;
+  }
+}
+@media only screen and (max-width: 1160px)
+{
+  #footer
+  {
+    margin-top: 5%;
+  }
+}
+@media only screen and (max-width: 1060px) {
   nav ul {
     width: 100%;
     background: linear-gradient(to right, #182c25, #1e453e);
@@ -323,68 +351,106 @@ iframe {
     transition: 0.5s;
   }
 
-  .row {
+  .rad {
     flex-direction: column-reverse;
     margin: 50px 0;
   }
 
-  .col-2 {
+  .kolumn2 {
     flex-basis: 100%;
     margin-bottom: 50px;
   }
 
-  .col-2 .controller {
+  .kolumn2 .kontroll {
     width: 77%;
   }
 
-  .color-box {
+  .box {
     transform: translateX(75px);
   }
 
-  .col-1 {
+  .kolumn1 {
     flex-basis: 100%;
   }
 
-  .col-1 h2 {
+  .kolumn1 h2 {
     font-size: 35px;
   }
 
-  .col-1 h3 {
+  .kolumn1 h3 {
     font-size: 15px;
   }
 
-  .logo {
+  .logga {
     margin-left: 3%;
   }
-  .contact-container {
-    margin-top: -1200px;
+  .kontaktContainer {
+    margin: 0 auto;
+    width: 90%;
   }
-  .col-1 {
+  .kolumn1 {
     width: 50%;
     height: 40%;
+  }
+  #footer
+  {
+    margin-top: -40%;
   }
 }
 
 @media (max-width: 964px) {
-  .specs_text {
+  .specsText {
     line-height: 175%;
   }
-  .contact-container {
+  .kontaktContainer {
     margin: 0 auto;
     width: 90%;
   }
 }
 @media (max-width: 700px) {
-  .contact-container {
+  .kontaktContainer {
     grid-template-columns: 1fr;
     gap: 1rem;
-    margin-top: 20rem !important;
+    margin-top: 0px;
     height: 1000px;
   }
-  .map iframe {
+  iframe
+  {
+    margin-top: 200px;
+  }
+  #footer
+  {
+    height: 10%;
+  }
+  .karta iframe {
     height: 400px;
   }
   .social {
-    margin-top: 87%;
+    margin-top: 0%;
   }
+}
+@media (max-width: 500px)
+{
+  .kolumn1
+  {
+    margin-left: 1px;
+  }
+  #footer
+  {
+    margin-top: -60%;
+  }
+  .logga
+  {
+    margin-left: 30px;
+    width: 70px;
+  }
+  .utforska, .knapp
+  {
+    opacity: 0;
+  }
+}
+@keyframes animation1
+{
+  from {background-color: transparent;}
+  to {background-color: #1e453e;}
 }
